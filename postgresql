@@ -1,0 +1,18 @@
+Node.js and PostgreSQL
+==================================
+mkdir project
+cd project
+npm init -y
+npm install express pg sequelize
+===============================================
+
+Create a PostgreSQL 
+--------------------------------
+CREATE TABLE customers (
+  sno SERIAL PRIMARY KEY,
+  customer_name VARCHAR(255),
+  age INT,
+  phone VARCHAR(20),
+  location VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
